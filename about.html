@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="format-detection" content="telephone=no">
+		<link type="text/css" rel="stylesheet" href="./css/slick-theme.css">
+		<link type="text/css" rel="stylesheet" href="./css/slick.css">
+		<link type="text/css" rel="stylesheet" href="./css/swiper.css">
+		<link type="text/css" rel="stylesheet" href="./css/oc-theme.css">
+	</head>
+	<body>
+		<header id="header">
+			<a href="./" class="header-logo">
+				<img src="./img/common/logo.png" alt="Tamatebako" class="logo-01">
+				<img src="./img/common/logo-white.png" alt="Tamatebako" class="logo-02">
+			</a>
+			<nav class="header-nav">
+				<div class="header-nav__heading">
+					<div class="header-btn">
+						<ul class="header-nav__login">
+							<li><a href="">ログイン</a></li>
+							<li><a href="">会員登録</a></li>
+						</ul>
+						<a href="" class="header-btn-sp sp-tb">カートを見る</a>
+					</div>
+					<ul class="header-nav__language">
+						<li><a href="" class="active">JP</a></li>
+						<li><a href="">EN</a></li>
+					</ul>
+					<ul class="header-nav__items">
+						<li>
+							<div class="header-nav__items-box header-nav__items-box--seach">
+								<div class="seach-box">
+									<input type="text" class="header-nav__items-box-input" placeholder="商品検索">
+									<button class="header-nav__items-box--btn header-nav__items-box--img js-sub">
+										<img src="./img/common/search.png" alt="search" class="img-01">
+										<img src="./img/common/search-hv.png" alt="search" class="img-02">
+									</button>
+									<span class="sp-open--search"></span>
+								</div>
+								<span class="header-nav__items-box--btn header-nav__items-box--img js-open-search">
+									<img src="./img/common/search.png" alt="search" class="img-01">
+									<img src="./img/common/search-hv.png" alt="search" class="img-02">
+								</span>
+							</div>
+						</li>
+						<li class="pc-tb">
+							<a href="" class="header-nav__items-box header-nav__items-box--cart header-nav__items-box--img">
+								<img src="./img/common/cart.png" alt="cart" class="img-01">
+								<img src="./img/common/cart-hv.png" alt="cart" class="img-02">
+								<span></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="header-nav__menu">
+					<li class="header-nav__menu-item">
+						<a href="" class="active">Home</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">About</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">Online shop</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">Rental items</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">Made-to-order</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">Assistance with costumes</a>
+					</li>
+				</ul>
+				<ul class="header-nav__other sp-tb">
+					<li><a href="">プライバシーポリシー</a></li>
+					<li><a href="">利用規約</a></li>
+					<li><a href="">送料について</a></li>
+				</ul>
+				<ul class="header-nav__sns sp-tb">
+					<li><a href="" target="_blank"><img src="./img/common/instagram.png" alt="instagram" width="20"></a></li>
+				</ul>
+			</nav>
+			<div class="header-itemsp">
+				<span class="item header-itemsp--search">
+					<img src="./img/common/search.png" alt="search" width="20">
+				</span>
+				<a href="" class="item header-itemsp--cart">
+					<img src="./img/common/cart.png" alt="cart" width="18">
+					<span></span>
+				</a>
+			</div>
+			<div class="search-tb">
+				<div class="search-tb__heading">
+					<input type="text" class="header-nav__items-box-input" placeholder="商品検索">
+					<button class="header-nav__items-box--btn header-nav__items-box--img">
+						<img src="./img/common/search.png" alt="search">
+					</button>
+				</div>
+				<span class="search-tb__btn"> カテゴリから探す </span>
+				<div class="search-tb__tag">
+					<span class="search-tb__tag-ttl">トレンドタグ</span>
+					<ul>
+						<li><span>帯ピアス</span></li>
+						<li><span>西陣織</span></li>
+						<li><span>マジェステ</span></li>
+						<li><span>サコッシュ</span></li>
+						<li><span>2つ玉がま口バッグ</span></li>
+						<li><span>ショルダーバッグとの2way</span></li>
+					</ul>
+				</div>
+				<span class="search-tb__close">
+					<img src="./img/common/close.png" alt="close">
+				</span>
+			</div>
+			<div class="search-list">
+				<span class="search-list__ttl">カテゴリから探す</span>
+				<ul class="search-list__all">
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-01.png" alt="帯ベルト">
+							<p>帯ベルト</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-02.png" alt="帯ピアス">
+							<p>帯ピアス</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-03.png" alt="ポニーフック">
+							<p>ポニーフック</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-04.png" alt="マジェステ">
+							<p>マジェステ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-05.png" alt="オビスチェ">
+							<p>オビスチェ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-06.png" alt="セパレート着物">
+							<p>セパレート着物</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-07.png" alt="西陣織ジレ">
+							<p>西陣織ジレ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-08.png" alt="ギフト（ラッピング）">
+							<p>ギフト（ラッピング）</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-09.png" alt="サコッシュ">
+							<p>サコッシュ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-10.png" alt="スマホ用サコッシュ">
+							<p>スマホ用サコッシュ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-11.png" alt="ニュームバック">
+							<p>ニュームバック</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-12.png" alt="クラッチ　2つ玉がま口バック　SSサイズ（S）">
+							<p>クラッチ　2つ玉がま口バック　SSサイズ（S）</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-13.png" alt="クラッチ　2つ玉がま口バック　SSサイズ（S）クラッチ　2つ玉がま口バック　SSサイズ（S）">
+							<p>クラッチ　2つ玉がま口バック　SSサイズ（S）クラッチ　2つ玉がま口バック　SSサイズ（S）</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<span class="js-mobile">
+				<span></span>
+			</span>
+		</header>
+		<main class="page-about">
+			<section class="sec-mv-page">
+				<div class="inner">
+					<div class="mv-page">
+						<h1 class="mv-page__ttl c-ttl__01">About</h1>
+					</div>
+				</div>
+				<div class="mv-page__banner">
+					<img src="./img/about/about-mv.jpg" alt="About" class="pc">
+					<img src="./img/about/about-mv-sp.jpg" alt="About" class="sp">
+					<h2 class="mv-page__banner-ttl">
+						<span class="c-ft--en">Mission</span>
+						<span class="c-ft--jp">日本の伝統を、もっと身近に。</span>
+					</h2>
+				</div>
+			</section>
+			<section class="sec-about-content">
+				<div class="inner">
+					<div class="about-block">
+						<div class="about-block__ct c-txt__basic">
+							<h3 class="about-block__ct-ttl">
+								<span class="c-ft--en">Culture</span>
+								<span class="c-ft--jp">日本の美意識の継承</span>
+							</h3>
+							<p> 熟練職人の技術や親が子を思う気持ちなど、着物や帯に込められた思いや美意識を、大切に継承しています。 </p>
+						</div>
+						<div class="about-block__img">
+							<img src="./img/about/about-img-01.jpg" alt="Culture">
+						</div>
+					</div>
+					<div class="about-block">
+						<div class="about-block__ct c-txt__basic">
+							<h3 class="about-block__ct-ttl">
+								<span class="c-ft--en">Design</span>
+								<span class="c-ft--jp">モードとエレガンスが共演したデザイン</span>
+							</h3>
+							<p> 日本の伝統織物に対する深いリスペクトを持ちながら、現代のトレンドに合わせたモードでエレガントなデザインを追求しています。 </p>
+						</div>
+						<div class="about-block__img">
+							<img src="./img/about/about-img-02.jpg" alt="Design">
+						</div>
+					</div>
+					<div class="about-block">
+						<div class="about-block__ct c-txt__basic">
+							<h3 class="about-block__ct-ttl">
+								<span class="c-ft--en">Quality</span>
+								<span class="c-ft--jp">経験と技術による確かな品質</span>
+							</h3>
+							<p> 着物や帯の幅は約30cm程で長さも制約があります。<br> また、訪問着などは柄合わせも必要になってくるため、洋裁と和裁の経験を積んだ職人たちが高度な技術で、拘りを持ってものづくりをしています。 </p>
+						</div>
+						<div class="about-block__img">
+							<img src="./img/about/about-img-03.jpg" alt="Quality">
+						</div>
+					</div>
+					<div class="about-block">
+						<div class="about-block__ct c-txt__basic">
+							<h3 class="about-block__ct-ttl">
+								<span class="c-ft--en">Maintenance</span>
+								<span class="c-ft--jp">持続可能な取り組み</span>
+							</h3>
+							<p> 眠っていた着物や帯をアップサイクルさせるだけではなく、使用後の擦れなどで生じた綻びなどをできるかぎり補修し、長く使用できるようケアメンテにも注力しております。 </p>
+						</div>
+						<div class="about-block__img">
+							<img src="./img/about/about-img-04.jpg" alt="Maintenance">
+						</div>
+					</div>
+					<div class="about-staff">
+						<h2 class="c-ttl__01 mbpc-100">Staff</h2>
+						<div class="about-staff__item">
+							<div class="about-staff__ct c-txt__basic">
+								<h3 class="about-staff__ct-ttl">
+									<span class="c-ft--en">Tamatebako Owner designer</span>
+									<span class="c-ft--en about-staff__ct-ttl--name">Tamami Katsuma</span>
+								</h3>
+								<p> 東京都出身。都内大学で服飾史を中心に、繊維学、構成学、和裁、意匠学を研究し、教員免許を取得。学生時代からイベント衣装などのデザインや製作に携わり、卒業後はウェディングドレス製作会社に勤務。独立後はドレスやステージ衣装の製作事業を経営。ウエディングドレスや芸能人の衣装、ドラマやCMなどの衣装を製作。 </p>
+								<p> 制作活動をしていく中で、大好きだった祖母が遺してくれた着物や帯に出会い、その織物の魅力に気付く。その頃よく目にしたリメイク物に疑問があり、独自のデザインを追求していくうちに、オーダーメイドの依頼をいただくようになり、2016年に『たまてばこhandmade』を​開業。 </p>
+							</div>
+							<div class="about-staff__img">
+								<img src="./img/about/about-img-05.jpg" alt="Tamami Katsuma">
+							</div>
+						</div>
+						<div class="about-staff__item">
+							<div class="about-staff__ct c-txt__basic">
+								<h3 class="about-staff__ct-ttl">
+									<span class="c-ft--en">Tamatebako Creative director</span>
+									<span class="c-ft--en about-staff__ct-ttl--name">Miho Katsuma</span>
+								</h3>
+								<p> Tamatebakoのデザイン企画やマーケティング全般を担当。<br> 写真撮影や動画制作、撮影全体のディレクション等も行う。SNSマーケティングアドバイザー。時々アーティスト。 </p>
+							</div>
+							<div class="about-staff__img">
+								<img src="./img/about/about-img-06.jpg" alt="Miho Katsuma">
+							</div>
+						</div>
+					</div>
+					<h2 class="c-ttl__01">Achievements</h2>
+					<ul class="about-achievements">
+						<li class="about-achievements__item">
+							<span class="about-achievements__year">2023</span>
+							<div class="about-achievements__box">
+								<dl>
+									<dt>Feb</dt>
+									<dd>
+										<p> WILD HEARTS 英語版声優のキャストインタビュー動画にて、声優を務められたミラクル・ベル・マジック氏に衣装をご着用いただきました </p>
+										<p> NHK総合【民謡魂ふるさとの唄】に出演された 井頭愛美氏に衣装・ピアスをご着用いただきました </p>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="about-achievements__item">
+							<span class="about-achievements__year">2022</span>
+							<div class="about-achievements__box">
+								<dl>
+									<dt>Nov</dt>
+									<dd>
+										<p> ELLE ACTIVE! FESTIVAL2022にて、ミラクル・ベル・マジック氏に衣装をご着用いただきました </p>
+										<p> JDS主催パリ展示会出展 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>May</dt>
+									<dd>
+										<p> ベネチアカフォスカリ短編映画祭にて三島有紀子氏に衣装を提供させていただきました </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Apr</dt>
+									<dd>
+										<p> Cartierのイベント【シジエム・サンス・パル・カルティエ】にて平手友梨奈氏にバッグをお持ちいただきました </p>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="about-achievements__item">
+							<span class="about-achievements__year">2021</span>
+							<div class="about-achievements__box">
+								<dl>
+									<dt>Nov</dt>
+									<dd>
+										<p> 渋谷スクランブルスクエア５階中央イベントスペース出店 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Jul</dt>
+									<dd>
+										<p> 渋谷スクランブルスクエア５階中央イベントスペース出店 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>May</dt>
+									<dd>
+										<p> 渋谷スクランブルスクエア４階428−224スペース出店 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Feb</dt>
+									<dd>
+										<p> 渋谷スクランブルスクエア５階中央イベントスペース出店 </p>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="about-achievements__item">
+							<span class="about-achievements__year">2020</span>
+							<div class="about-achievements__box">
+								<dl>
+									<dt>Nov</dt>
+									<dd>
+										<p> 渋谷スクランブルスクエア４階428−224スペース出店 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Sep</dt>
+									<dd>
+										<p> WEB雑誌【MERRY】に掲載 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Jun</dt>
+									<dd>
+										<p> 高島屋横浜店１階正面エスカレーター脇イベントスペース出店 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Feb</dt>
+									<dd>
+										<p> 東急プラザ銀座HINKARINKA1st出店 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Jan</dt>
+									<dd>
+										<p> 東急プラザ銀座HINKARINKA3rd出店 </p>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="about-achievements__item">
+							<span class="about-achievements__year">2019</span>
+							<div class="about-achievements__box">
+								<dl>
+									<dt>Dec</dt>
+									<dd>
+										<p> 雑誌【an.an】1月号No.2182に掲載 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Nov</dt>
+									<dd>
+										<p> JDS主催パリ展示会出展 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Oct</dt>
+									<dd>
+										<p> 全国信用金庫主催【よい仕事おこしフェア】東京国際フォーラム出展 </p>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="about-achievements__item">
+							<span class="about-achievements__year">2018</span>
+							<div class="about-achievements__box">
+								<dl>
+									<dt>Sep</dt>
+									<dd>
+										<p> 代官山和パーティー出店 </p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Feb</dt>
+									<dd>
+										<p> 渋谷ヒカリエ5階イベントスペース出店 </p>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="inner">
+				<div class="footer-left">
+					<a href="" class="footer-logo">
+						<img src="./img/common/footer-logo.png" alt="Tamatebako">
+					</a>
+					<a href="https://www.google.com/maps/search/%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E5%B0%8F%E5%B1%B12-14-3+1F%E5%BA%97%E8%88%97+Tamatebako/@35.6202433,139.707762,17z/data=!3m1!4b1?hl=ja&entry=ttu" class="footer-note" target="_blank"> 東京都品川区小山2-14-3 1F店舗 Tamatebako </a>
+					<ul class="footer-sns sp">
+						<li><a href="" target="_blank"><img src="./img/common/instagram-02.png" alt="instagram" width="24"></a></li>
+					</ul>
+				</div>
+				<div class="footer-right">
+					<ul class="footer-menu footer-menu--en c-ft--en">
+						<li><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Online shop</a></li>
+						<li><a href="">Rental items</a></li>
+						<li><a href="">Made-to-order</a></li>
+						<li><a href="">Assistance with costumes</a></li>
+					</ul>
+					<ul class="footer-menu footer-menu--jp">
+						<li><a href="">プライバシーポリシー</a></li>
+						<li><a href="">利用規約</a></li>
+						<li><a href="">送料について</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="inner">
+					<div class="copyright"> ©Tamatebako </div>
+					<ul class="footer-sns pc">
+						<li><a href="" target="_blank"><img src="./img/common/instagram.png" alt="instagram" width="16"></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="./js/slick.min.js"></script>
+		<script src="./js/swiper.js"></script>
+		<script src="./js/jquery.matchHeight-min.js"></script>
+		<script src="./js/oc-theme.js"></script>
+	</body>
+</html>

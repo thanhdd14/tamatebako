@@ -1,0 +1,176 @@
+@use "vars" as *;
+
+.sec-mv-page{
+	padding: 59px 0;
+}
+.mv-page{
+	&__ttl{
+		display: block;
+		color: $dark;
+		margin-bottom: 50px;
+		@include mq(){
+			margin-bottom: 25px;
+		}
+	}
+	&__banner{
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(black,0.2);
+		}
+		img{
+			width: 100%;
+		}
+		&-ttl{
+			display: block;
+			color: white;
+			position: absolute;
+			@include v-align;
+			left: 0;
+			right: 0;
+			text-align: center;
+			padding: 15px;
+			line-height: 1.6;
+			z-index: 1;
+			span{
+				display: block;
+			}
+			.c-ft--en{
+				@include font-size(24);
+				font-weight: 600;
+			}
+			.c-ft--jp{
+				@include font-size(46);
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.sec-about-content{
+	padding: 90px 0 100px;
+}
+.about-block{
+	@include flex(0,center,wrap);
+	margin-bottom: 153px;
+	&:nth-child(even){
+		.about-block{
+			&__img{
+				order: 1;
+			}
+			&__ct{
+				order: 2;
+				padding: 0 0 0 30px;
+			}
+		}
+	}
+	&__img{
+		width: 60%;
+		img{
+			width: 100%;
+		}
+	}
+	&__ct{
+		width: 40%;
+		padding: 0 30px 0 0;
+		&-ttl{
+			display: block;
+			line-height: 1.38;
+			margin-bottom: 15px;
+			span{
+				display: block;
+			}
+			.c-ft{
+				&--en{
+					@include font-size(16);
+					margin-bottom: 10px;
+				}
+				&--jp{
+					@include font-size(36);
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.about-staff{
+	&__item{
+		@include flex(0,center,wrap);
+		position: relative;
+		padding: 65px 0;
+		margin-bottom: 180px;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 40px;
+			bottom: 0;
+			background: #F4F4F4;
+		}
+		&:nth-child(odd){
+			justify-content: flex-end;
+			&:before{
+				left: 40px;
+				right: 0;
+			}
+			.about-staff{
+
+				&__img{
+					left: 0;
+					right: auto;
+				}
+			}
+		}
+	}
+	&__ct{
+		width: 65%;
+		position: relative;
+		z-index: 1;
+		display: block;
+		margin-bottom: 15px;
+		padding: 0 60px 0 40px;
+		span{
+			display: block;
+		}
+		&-ttl{
+			display: block;
+			line-height: 1.4;
+			margin-bottom: 20px;
+			.c-ft{
+				&--en{
+					@include font-size(16);
+					margin-bottom: 10px;
+
+				}
+			}
+			.about-staff__ct-ttl--name{
+				@include font-size(48);
+				font-weight: 500;
+			}
+
+		}
+		p{
+			margin-bottom: 20px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__img{
+		width: 35%;
+		position: absolute;
+		top: -100px;
+		right: 0;
+		z-index: 1;
+		img{
+			width: 100%;
+		}
+	}
+}

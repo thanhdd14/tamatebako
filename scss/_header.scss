@@ -51,6 +51,11 @@
 		}
 	}
 	.header-nav{
+		@include mq(tb-min){
+			display: block !important;
+			opacity: 1 !important;
+			transition: all 0s ease !important;
+		}
 		@include mq(tb){
 			display: none;
 			position: absolute;
