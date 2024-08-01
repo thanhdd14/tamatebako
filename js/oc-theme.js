@@ -129,3 +129,9 @@ $(function () {
 jQuery(function ($) {
     $('.product-list .product-list__item .product-list__ct .product-list__ct-ttl').matchHeight();
 });
+
+
+$('.js-more-about-staff').on('click', function(){
+    $(this).addClass("off");
+    $(".about-staff__ct--js").addClass("active");
+});
