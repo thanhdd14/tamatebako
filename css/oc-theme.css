@@ -2768,6 +2768,7 @@ textarea.form-control {
   background: white;
   border: none;
   border-radius: 0;
+  opacity: 1 !important;
 }
 .mv-slider .slick-dots li.slick-active button:before {
   width: 100%;
