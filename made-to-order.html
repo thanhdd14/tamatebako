@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="format-detection" content="telephone=no">
+		<link type="text/css" rel="stylesheet" href="./css/slick-theme.css">
+		<link type="text/css" rel="stylesheet" href="./css/slick.css">
+		<link type="text/css" rel="stylesheet" href="./css/swiper.css">
+		<link type="text/css" rel="stylesheet" href="./css/oc-theme.css">
+	</head>
+	<body>
+		<header id="header">
+			<a href="./" class="header-logo">
+				<img src="./img/common/logo.png" alt="Tamatebako" class="logo-01">
+				<img src="./img/common/logo-white.png" alt="Tamatebako" class="logo-02">
+			</a>
+			<nav class="header-nav">
+				<div class="header-nav__heading">
+					<div class="header-btn">
+						<ul class="header-nav__login">
+							<li><a href="">ログイン</a></li>
+							<li><a href="">会員登録</a></li>
+						</ul>
+						<a href="" class="header-btn-sp sp-tb">カートを見る</a>
+					</div>
+					<ul class="header-nav__language">
+						<li><a href="" class="active">JP</a></li>
+						<li><a href="">EN</a></li>
+					</ul>
+					<ul class="header-nav__items">
+						<li>
+							<div class="header-nav__items-box header-nav__items-box--seach">
+								<div class="seach-box">
+									<input type="text" class="header-nav__items-box-input" placeholder="商品検索">
+									<button class="header-nav__items-box--btn header-nav__items-box--img js-sub">
+										<img src="./img/common/search.png" alt="search" class="img-01">
+										<img src="./img/common/search-hv.png" alt="search" class="img-02">
+									</button>
+									<span class="sp-open--search"></span>
+								</div>
+								<span class="header-nav__items-box--btn header-nav__items-box--img js-open-search">
+									<img src="./img/common/search.png" alt="search" class="img-01">
+									<img src="./img/common/search-hv.png" alt="search" class="img-02">
+								</span>
+							</div>
+						</li>
+						<li class="pc-tb">
+							<a href="" class="header-nav__items-box header-nav__items-box--cart header-nav__items-box--img">
+								<img src="./img/common/cart.png" alt="cart" class="img-01">
+								<img src="./img/common/cart-hv.png" alt="cart" class="img-02">
+								<span></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="header-nav__menu">
+					<li class="header-nav__menu-item">
+						<a href="" class="active">Home</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">About</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">Online shop</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">Rental items</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">Made-to-order</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="">Assistance with costumes</a>
+					</li>
+				</ul>
+				<ul class="header-nav__other sp-tb">
+					<li><a href="">プライバシーポリシー</a></li>
+					<li><a href="">利用規約</a></li>
+					<li><a href="">送料について</a></li>
+				</ul>
+				<ul class="header-nav__sns sp-tb">
+					<li><a href="" target="_blank"><img src="./img/common/instagram.png" alt="instagram" width="20"></a></li>
+				</ul>
+			</nav>
+			<div class="header-itemsp">
+				<span class="item header-itemsp--search">
+					<img src="./img/common/search.png" alt="search" width="20">
+				</span>
+				<a href="" class="item header-itemsp--cart">
+					<img src="./img/common/cart.png" alt="cart" width="18">
+					<span></span>
+				</a>
+			</div>
+			<div class="search-tb">
+				<div class="search-tb__heading">
+					<input type="text" class="header-nav__items-box-input" placeholder="商品検索">
+					<button class="header-nav__items-box--btn header-nav__items-box--img">
+						<img src="./img/common/search.png" alt="search">
+					</button>
+				</div>
+				<span class="search-tb__btn"> カテゴリから探す </span>
+				<div class="search-tb__tag">
+					<span class="search-tb__tag-ttl">トレンドタグ</span>
+					<ul>
+						<li><span>帯ピアス</span></li>
+						<li><span>西陣織</span></li>
+						<li><span>マジェステ</span></li>
+						<li><span>サコッシュ</span></li>
+						<li><span>2つ玉がま口バッグ</span></li>
+						<li><span>ショルダーバッグとの2way</span></li>
+					</ul>
+				</div>
+				<span class="search-tb__close">
+					<img src="./img/common/close.png" alt="close">
+				</span>
+			</div>
+			<div class="search-list">
+				<span class="search-list__ttl">カテゴリから探す</span>
+				<ul class="search-list__all">
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-01.png" alt="帯ベルト">
+							<p>帯ベルト</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-02.png" alt="帯ピアス">
+							<p>帯ピアス</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-03.png" alt="ポニーフック">
+							<p>ポニーフック</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-04.png" alt="マジェステ">
+							<p>マジェステ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-05.png" alt="オビスチェ">
+							<p>オビスチェ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-06.png" alt="セパレート着物">
+							<p>セパレート着物</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-07.png" alt="西陣織ジレ">
+							<p>西陣織ジレ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-08.png" alt="ギフト（ラッピング）">
+							<p>ギフト（ラッピング）</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-09.png" alt="サコッシュ">
+							<p>サコッシュ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-10.png" alt="スマホ用サコッシュ">
+							<p>スマホ用サコッシュ</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-11.png" alt="ニュームバック">
+							<p>ニュームバック</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-12.png" alt="クラッチ　2つ玉がま口バック　SSサイズ（S）">
+							<p>クラッチ　2つ玉がま口バック　SSサイズ（S）</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="search-list__all-box">
+							<img src="./img/common/img-13.png" alt="クラッチ　2つ玉がま口バック　SSサイズ（S）クラッチ　2つ玉がま口バック　SSサイズ（S）">
+							<p>クラッチ　2つ玉がま口バック　SSサイズ（S）クラッチ　2つ玉がま口バック　SSサイズ（S）</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<span class="js-mobile">
+				<span></span>
+			</span>
+		</header>
+		<main class="page-made-to-order">
+			<section class="src-rental">
+				<div class="inner">
+					<div class="rental-items">
+						<div class="rental-items__ct c-txt__basic">
+							<h1 class="c-ttl__01"> Made<br> to<br> order </h1>
+							<span class="rental-items__ct-ttl">着ていない着物や帯を<br class="sp">ときめきアイテムに！</span>
+							<p> Tamatebakoの帯バッグや着物ワンピースなどを5泊6日でレンタルいたします。 <br> 貸し出し中の場合がありますので、必ずメールでご利用日時とご利用希望期間をお知らせください。 </p>
+							<div class="flex-end">
+								<a href="" target="_blank" class="ion-link c-ft--en">LINE</a>
+							</div>
+						</div>
+						<div class="rental-items__img">
+							<div class="rental-items__img--pullright">
+								<img src="./img/made/made-to-order-img.jpg" alt="Made to order">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec-flow">
+				<div class="inner">
+					<h2 class="c-ttl__01">Flow</h2>
+					<ul class="flow-tab">
+						<li class="active">
+							<span class="c-ft--en">Store</span>
+							<span class="c-ft--jp">ご来店の場合</span>
+						</li>
+						<li>
+							<span class="c-ft--en">Online</span>
+							<span class="c-ft--jp">オンラインの場合</span>
+						</li>
+					</ul>
+					<div class="flow-block c-txt__basic">
+						<div class="flow-block__item active">
+							<ul class="flow-steps">
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.01</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">お問い合わせ</span>
+												<span class="c-ft--en">Contact</span>
+											</h3>
+											<p> LINEよりご予約の上、<br class="sp">お越しください。 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-01.png" alt="お問い合わせ">
+										</div>
+									</div>
+								</li>
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.02</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">デザインの決定</span>
+												<span class="c-ft--en">Deciding on the design</span>
+											</h3>
+											<p> お持ち込みの着物や帯を拝見し、制作するデザインを決めます。 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-02.png" alt="デザインの決定">
+										</div>
+									</div>
+								</li>
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.03</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">制作</span>
+												<span class="c-ft--en">Production</span>
+											</h3>
+											<p> 制作期間、お見積り金額を提示いたします。代金のご決済が確認されてから制作にかかります。<br> 制作期間：１〜３ヶ月 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-03.png" alt="制作">
+										</div>
+									</div>
+								</li>
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.04</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">完成のご連絡</span>
+												<span class="c-ft--en">Product completion notice</span>
+											</h3>
+											<p> 商品が完成した旨をお知らせいたします。<br> LINEより完成した商品の画像をお送りいたします。 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-04.png" alt="完成のご連絡">
+										</div>
+									</div>
+								</li>
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.05</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">商品のお届け</span>
+												<span class="c-ft--en">Delivery of the product</span>
+											</h3>
+											<p> 店頭にてお渡しいたします。<br class="sp">ご郵送も承ります。 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-05.png" alt="商品のお届け">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="flow-block__item">
+							<ul class="flow-steps">
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.01</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">お問い合わせ</span>
+												<span class="c-ft--en">Contact</span>
+											</h3>
+											<p> LINEより、オーダーメイドご希望のアイテムをお知らせください。 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-01.png" alt="お問い合わせ">
+										</div>
+									</div>
+								</li>
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.02</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">デザインの決定</span>
+												<span class="c-ft--en">Deciding on the design</span>
+											</h3>
+											<p> お手持ちの着物や帯をお送りください。<br> お受け取り後、<br class="sp">制作するデザインを決めます。 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-02.png" alt="デザインの決定">
+										</div>
+									</div>
+								</li>
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.03</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">制作</span>
+												<span class="c-ft--en">Production</span>
+											</h3>
+											<p> 制作期間、お見積り金額を提示いたします。代金のご決済が確認されてから制作にかかります。<br> 制作期間：１〜３ヶ月 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-03.png" alt="制作">
+										</div>
+									</div>
+								</li>
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.04</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">完成のご連絡</span>
+												<span class="c-ft--en">Product completion notice</span>
+											</h3>
+											<p> 商品が完成した旨をお知らせいたします。<br> LINEより完成した商品の画像をお送りいたします。 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-04.png" alt="完成のご連絡">
+										</div>
+									</div>
+								</li>
+								<li class="flow-steps__item">
+									<span class="flow-steps__number">Step.05</span>
+									<div class="flow-steps__block">
+										<div class="flow-steps__block-ct">
+											<h3 class="flow-steps__block-ct-ttl">
+												<span class="c-ft--jp">商品のお届け</span>
+												<span class="c-ft--en">Delivery of the product</span>
+											</h3>
+											<p> 商品をご郵送いたします。 </p>
+										</div>
+										<div class="flow-steps__block-img">
+											<img src="./img/made/icon-06.png" alt="商品のお届け">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec-items">
+				<div class="inner">
+					<h2 class="c-ttl__01">Items</h2>
+				</div>
+				<ul class="items-block">
+					<li class="items-block__item">
+						<a href="" class="items-block__box">
+							<div class="items-block__img">
+								<img src="./img/made/item-01.jpg" alt="がま口バッグ">
+							</div>
+							<h3 class="items-block__ttl"> がま口バッグ </h3>
+						</a>
+					</li>
+					<li class="items-block__item">
+						<a href="" class="items-block__box">
+							<div class="items-block__img">
+								<img src="./img/made/item-02.jpg" alt="その他バッグ">
+							</div>
+							<h3 class="items-block__ttl"> その他バッグ </h3>
+						</a>
+					</li>
+					<li class="items-block__item">
+						<a href="" class="items-block__box">
+							<div class="items-block__img">
+								<img src="./img/made/item-03.jpg" alt="その他小物">
+							</div>
+							<h3 class="items-block__ttl"> その他小物 </h3>
+						</a>
+					</li>
+					<li class="items-block__item">
+						<a href="" class="items-block__box">
+							<div class="items-block__img">
+								<img src="./img/made/item-04.jpg" alt="帯ベルト・オビスチェ・ジレ">
+							</div>
+							<h3 class="items-block__ttl"> 帯ベルト・オビスチェ・ジレ </h3>
+						</a>
+					</li>
+					<li class="items-block__item">
+						<a href="" class="items-block__box">
+							<div class="items-block__img">
+								<img src="./img/made/item-05.jpg" alt="着物アップサイクル">
+							</div>
+							<h3 class="items-block__ttl"> 着物アップサイクル </h3>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="inner">
+				<div class="footer-left">
+					<a href="" class="footer-logo">
+						<img src="./img/common/footer-logo.png" alt="Tamatebako">
+					</a>
+					<a href="https://www.google.com/maps/search/%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E5%B0%8F%E5%B1%B12-14-3+1F%E5%BA%97%E8%88%97+Tamatebako/@35.6202433,139.707762,17z/data=!3m1!4b1?hl=ja&entry=ttu" class="footer-note" target="_blank"> 東京都品川区小山2-14-3 1F店舗 Tamatebako </a>
+					<ul class="footer-sns sp">
+						<li><a href="" target="_blank"><img src="./img/common/instagram-02.png" alt="instagram" width="24"></a></li>
+					</ul>
+				</div>
+				<div class="footer-right">
+					<ul class="footer-menu footer-menu--en c-ft--en">
+						<li><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Online shop</a></li>
+						<li><a href="">Rental items</a></li>
+						<li><a href="">Made-to-order</a></li>
+						<li><a href="">Assistance with costumes</a></li>
+					</ul>
+					<ul class="footer-menu footer-menu--jp">
+						<li><a href="">プライバシーポリシー</a></li>
+						<li><a href="">利用規約</a></li>
+						<li><a href="">送料について</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="inner">
+					<div class="copyright"> ©Tamatebako </div>
+					<ul class="footer-sns pc">
+						<li><a href="" target="_blank"><img src="./img/common/instagram.png" alt="instagram" width="16"></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="./js/slick.min.js"></script>
+		<script src="./js/swiper.js"></script>
+		<script src="./js/jquery.matchHeight-min.js"></script>
+		<script src="./js/oc-theme.js"></script>
+	</body>
+</html>

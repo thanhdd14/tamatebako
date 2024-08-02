@@ -1,0 +1,254 @@
+@use "vars" as *;
+
+.sec-flow{
+	padding: 50px 0;
+}
+.flow-tab{
+	@include flex(0,0,wrap);
+	li{
+		width: 50%;
+		cursor: pointer;
+		position: relative;
+		@include flex(0,end,wrap);
+		color: #8C8C8C;
+		padding: 28px 31px;
+		line-height: 1;
+		@include mq(){
+			padding: 20px 5px;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #E4E4E4;
+			@include smooth-transition;
+			border-radius: 5px 5px  0 0;
+		}
+		span{
+			display: block;
+			position: relative;
+			z-index: 1;
+		}
+		.c-ft--en{
+			@include font-size(48);
+			font-weight: 600;
+			@include mq(){
+				display: none;
+			}
+		}
+		.c-ft--jp{
+			@include font-size(14);
+			font-weight: 400;
+			top: -7px;
+			padding: 0 0 0 11px;
+			&:before{
+				content: "／ ";
+				@include mq(){
+					display: none;
+				}
+			}
+			@include mq(){
+				@include font-size(15);
+				font-weight: bold;
+				width: 100%;
+				text-align: center;
+				padding: 0;
+				top: 0;
+			}
+		}
+		&.active,&:hover{
+			color: white;
+			&:before{
+				top: -10px;
+				background: $dark;
+				@include mq(){
+					top: -4px;
+				}
+			}
+
+		}
+	}
+}
+.flow-block{
+	&__item{
+		display: none;
+		border: 1px solid #D8D8D8;
+		padding: 5% 6%;
+		@include mq(){
+			padding: 20px;
+		}
+		&.active{
+			display: block;
+		}
+	}
+}
+.flow-steps{
+	&__item{
+		padding: 0 0 0 100px;
+		position: relative;
+		@include mq(){
+			padding: 0;
+		}
+		&:last-child{
+			.flow-steps__block{
+				border-bottom: none;
+			}
+		}
+	}
+	&__number{
+		position: absolute;
+		top: 46px;
+		left: 0;
+		display: inline-block;
+		color: white;
+		background: $dark;
+		@include font-size(14);
+		line-height: 1.2;
+		font-weight: 400;
+		font-family: $font-en;
+		padding: 4px 8px;
+		@include mq(){
+			top: 0;
+		}
+	}
+	&__block{
+		@include flex(0,center,wrap);
+		border-bottom: 1px dotted #D8D8D8;
+		padding: 30px 0;
+		min-height: 175px;
+		@include mq(){
+			min-height: 100px;
+			margin-bottom: 30px;
+		}
+		&-ct{
+			width: calc(100% - 100px);
+			@include mq(){
+				width: 100%;
+				order: 2;
+				text-align: center;
+			}
+			&-ttl{
+				display: block;
+				font-weight: 600;
+				margin-bottom: 15px;
+				span{
+					display: inline-block;
+					position: relative;
+					@include mq(){
+						display: block;
+					}
+				}
+				.c-ft--jp{
+					@include font-size(24);
+					@include mq(){
+						@include font-size(18);
+					}
+				}
+				.c-ft--en{
+					@include font-size(14);
+					color: #8C8C8C;
+					padding: 0 0 0 5px;
+					@include mq(){
+						@include font-size(12);
+						padding: 0;
+					}
+					&:before{
+						content: "／ ";
+						@include mq(){
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		&-img{
+			width: 100px;
+			@include mq(){
+				display: block;
+				width: 75px;
+				margin: 0 auto;
+				order: 1;
+			}
+		}
+	}
+}
+
+.sec-items{
+	padding: 50px 0 150px;
+	@include mq(){
+		padding: 20px 0 80px;
+	}
+}
+.items-block{
+	@include flex(0,0,wrap);
+	&__item{
+		width: 33.333%;
+		@include mq(md-min){
+			&:nth-child(1),&:nth-child(2),&:nth-child(3){
+				border-top: 1px solid #D8D8D8;
+			}
+			&:last-child{
+				border-right: 1px solid #D8D8D8;
+			}
+		}
+		@include mq(){
+			width: 50%;
+			&:nth-child(1),&:nth-child(2){
+				border-top: 1px solid #D8D8D8;
+			}
+			&:last-child{
+				border-right: 1px solid #D8D8D8;
+			}
+		}
+	}
+	&__box{
+		display: block;
+		padding: 19px 19px 30px;
+		border: 1px solid #D8D8D8;
+		border-top: none;
+		border-right: none;
+		color: $dark;
+		height: 100%;
+		@include mq(){
+			padding: 10px;
+		}
+		&:hover{
+			background: #D8D8D8;
+			.items-block__ttl{
+				&:after{
+					width: 100%;
+				}
+			}
+		}
+	}
+	&__img{
+		margin-bottom: 10px;
+	}
+	&__ttl{
+		display: inline-block;
+		@include font-size(18);
+		font-weight: bold;
+		position: relative;
+		padding: 0 15px 0 0;
+		@include mq(){
+			display: block;
+			@include font-size(12);
+			text-align: center;
+			padding: 0;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background: $dark;
+			width: 0;
+			@include smooth-transition;
+		}
+	}
+}

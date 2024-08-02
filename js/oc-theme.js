@@ -135,3 +135,14 @@ $('.js-more-about-staff').on('click', function(){
     $(this).addClass("off");
     $(".about-staff__ct--js").addClass("active");
 });
+
+
+$(function () {
+    $(".flow-tab li").click(function () {
+        var num = $(".flow-tab li").index(this);
+        $(".flow-block .flow-block__item").removeClass('active');
+        $(".flow-block .flow-block__item").eq(num).addClass('active');
+        $(".flow-tab li").removeClass('active');
+        $(this).addClass('active')
+    });
+});
