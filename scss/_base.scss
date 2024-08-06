@@ -11,10 +11,11 @@ body {
 }
 
 a{
-	text-decoration: none;
+	text-decoration: none ;
 	@include smooth-transition;
 	&:hover{
-		opacity: 0.7;
+		opacity: 0.7 !important;
+		text-decoration: none ;
 	}
 	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 		display: inline-block;

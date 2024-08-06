@@ -117,6 +117,7 @@
 				&--en{
 					@include font-size(16);
 					margin-bottom: 10px;
+					color: #8C8C8C;
 					@include mq(){
 						@include font-size(14);
 					}
@@ -214,6 +215,7 @@
 				&--en{
 					@include font-size(16);
 					margin-bottom: 10px;
+					color: #8C8C8C;
 					@include mq(){
 						@include font-size(14);
 					}

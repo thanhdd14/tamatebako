@@ -12,7 +12,8 @@ reset style
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 10px; /* Base font size, change to 14px or 16px if needed */
+  font-size: 10px;
+  /* Base font size, change to 14px or 16px if needed */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -1148,7 +1149,8 @@ a {
   transition: all 0.3s ease;
 }
 a:hover {
-  opacity: 0.7;
+  opacity: 0.7 !important;
+  text-decoration: none;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   a {
@@ -1292,6 +1294,11 @@ Component
   }
 }
 
+.basic-note a {
+  color: #E58462;
+  text-decoration: underline !important;
+}
+
 .c-ttl__01 {
   display: block;
   font-size: clamp(48px, 8.8vw, 128px);
@@ -1310,7 +1317,7 @@ Component
 }
 .c-ttl__02 {
   display: block;
-  color: rgb(228, 228, 228);
+  color: #e4e4e4;
   font-family: "Outfit", sans-serif;
   font-size: 4rem;
   line-height: 1.2;
@@ -1324,7 +1331,7 @@ Component
   font-size: 2.2rem;
   line-height: 1.4;
   font-weight: 500;
-  color: #363636;
+  color: #363636 !important;
 }
 .c-btn__01:after {
   content: "";
@@ -1387,7 +1394,7 @@ Component
 
 .view-more {
   display: inline-block;
-  color: #363636;
+  color: #363636 !important;
   font-weight: 500;
   font-size: 1.4rem;
   text-decoration: underline;
@@ -1395,12 +1402,15 @@ Component
 
 .ion-link {
   display: inline-block;
-  color: #363636;
+  color: #363636 !important;
   position: relative;
   padding: 0 30px 0 0;
   font-size: 2.2rem;
   font-weight: 500;
   text-decoration: underline;
+}
+.ion-link:before {
+  display: none;
 }
 .ion-link:after {
   content: "";
@@ -2505,7 +2515,7 @@ textarea.form-control {
 }
 
 #footer {
-  border-top: 1px solid rgb(235, 235, 235);
+  border-top: 1px solid #ebebeb;
   background: white;
   padding: 50px 0 0;
 }
@@ -2637,7 +2647,7 @@ textarea.form-control {
   }
 }
 #footer .footer-menu--jp li a {
-  color: rgb(140, 140, 140);
+  color: #8c8c8c;
   font-size: 1.2rem;
 }
 #footer .footer-sns {
@@ -2840,6 +2850,7 @@ textarea.form-control {
   position: relative;
   letter-spacing: 1px;
   padding: 0 15px 0 0;
+  font-weight: 400;
 }
 @media screen and (max-width: 834px) {
   .mv-ttl .c-ft--jp {
@@ -2916,6 +2927,7 @@ textarea.form-control {
 .mission-block__ct-ttl {
   display: block;
   line-height: 1.4;
+  padding: 0;
   margin-bottom: 21px;
 }
 .mission-block__ct-ttl span {
@@ -2971,7 +2983,7 @@ textarea.form-control {
 }
 .product-list__box {
   display: block;
-  color: #363636;
+  color: #363636 !important;
   background: white;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
@@ -3173,7 +3185,7 @@ textarea.form-control {
   left: 0;
   right: 0;
   height: 500px;
-  background: rgb(54, 54, 54);
+  background: #363636;
 }
 .sec-made .inner {
   position: relative;
@@ -3182,7 +3194,7 @@ textarea.form-control {
 
 .made-block {
   display: block;
-  color: white;
+  color: white !important;
 }
 .made-block__img {
   position: relative;
@@ -3241,6 +3253,7 @@ textarea.form-control {
   line-height: 1.4;
   letter-spacing: 2px;
   margin-bottom: 27px;
+  text-decoration: none;
 }
 @media screen and (max-width: 834px) {
   .made-block__ct-ttl {
@@ -3312,8 +3325,8 @@ textarea.form-control {
 }
 
 .sec-news {
-  border-top: 1px solid rgb(216, 216, 216);
-  border-bottom: 1px solid rgb(216, 216, 216);
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -3322,7 +3335,7 @@ textarea.form-control {
 }
 .sec-news .news-items {
   width: 50%;
-  border-right: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid #d8d8d8;
   position: relative;
   padding: 50px;
 }
@@ -3330,7 +3343,7 @@ textarea.form-control {
   .sec-news .news-items {
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid #d8d8d8;
     padding: 41px 17px;
   }
 }
@@ -3415,7 +3428,7 @@ textarea.form-control {
   display: block;
   font-family: "Quicksand", sans-serif;
   font-size: 1.3rem;
-  color: rgb(140, 140, 140);
+  color: #8c8c8c;
   letter-spacing: 0.7px;
   margin-bottom: 8px;
 }
@@ -3451,7 +3464,7 @@ textarea.form-control {
 }
 .reviews-list__box {
   display: block;
-  color: #363636;
+  color: #363636 !important;
   font-size: 1.4rem;
   padding: 30px;
 }
@@ -3485,6 +3498,7 @@ textarea.form-control {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.4;
+  text-decoration: none;
 }
 @media screen and (max-width: 834px) {
   .reviews-list__heading-ct-ttl {
@@ -3495,13 +3509,14 @@ textarea.form-control {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    height: 54px;
   }
 }
 .reviews-list__heading-ct-note {
   display: block;
   font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;
-  color: rgb(140, 140, 140);
+  color: #8c8c8c;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -3655,6 +3670,7 @@ textarea.form-control {
 .about-block__ct-ttl .c-ft--en {
   font-size: 1.6rem;
   margin-bottom: 10px;
+  color: #8C8C8C;
 }
 @media screen and (max-width: 834px) {
   .about-block__ct-ttl .c-ft--en {
@@ -3761,6 +3777,7 @@ textarea.form-control {
 .about-staff__ct-ttl .c-ft--en {
   font-size: 1.6rem;
   margin-bottom: 10px;
+  color: #8C8C8C;
 }
 @media screen and (max-width: 834px) {
   .about-staff__ct-ttl .c-ft--en {
@@ -4173,6 +4190,7 @@ textarea.form-control {
   display: block;
   font-weight: 600;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 .flow-steps__block-ct-ttl span {
   display: inline-block;

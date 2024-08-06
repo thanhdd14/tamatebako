@@ -76,6 +76,12 @@ Component
 	}
 }
 
+.basic-note{
+	a{
+		color: #E58462;
+		text-decoration: underline !important;
+	}
+}
 
 
 
@@ -115,7 +121,7 @@ Component
 		@include font-size(22);
 		line-height: 1.4;
 		font-weight: 500;
-		color: $dark;
+		color: $dark !important;
 		&:after{
 			content: "";
 			position: absolute;
@@ -164,7 +170,7 @@ Component
 }
 .view-more{
 	display: inline-block;
-	color: $dark;
+	color: $dark !important;
 	font-weight: 500;
 	@include font-size(14);
 	text-decoration: underline;
@@ -172,12 +178,15 @@ Component
 
 .ion-link{
 	display: inline-block;
-	color: $dark;
+	color: $dark !important;
 	position: relative;
 	padding: 0 30px 0 0;
 	@include font-size(22);
 	font-weight: 500;
 	text-decoration: underline;
+	&:before{
+		display: none;
+	}
 	&:after{
 		content: "";
 		width: 12px;

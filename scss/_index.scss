@@ -155,6 +155,7 @@
 		position: relative;
 		letter-spacing: 1px;
 		padding: 0 15px 0 0;
+		font-weight: 400;
 		@include mq(){
 			max-width: 100%;
 			overflow: hidden;
@@ -211,6 +212,7 @@
 		&-ttl{
 			display: block;
 			line-height: 1.4;
+			padding: 0;
 			margin-bottom: 21px;
 			span{
 				display: block;
@@ -260,7 +262,7 @@
 
 	&__box{
 		display: block;
-		color: $dark;
+		color: $dark !important;
 		background: white;
 		@include smooth-transition;
 		padding: 19px;
@@ -434,7 +436,7 @@
 }
 .made-block{
 	display: block;
-	color: white;
+	color: white !important;
 
 	&__img{
 		position: relative;
@@ -485,6 +487,7 @@
 			line-height: 1.4;
 			letter-spacing: 2px;
 			margin-bottom: 27px;
+			text-decoration: none;
 			@include mq(){
 				@include font-size(26);
 			}
@@ -652,7 +655,7 @@
 	}
 	&__box{
 		display: block;
-		color: $dark;
+		color: $dark !important;
 		@include font-size(14);
 		padding: 30px;
 		@include mq(){
@@ -678,6 +681,7 @@
 				@include font-size(16);
 				font-weight: bold;
 				line-height: 1.4;
+				text-decoration: none;
 				@include mq(){
 					@include font-size(15);
 					text-overflow: ellipsis;
@@ -685,6 +689,7 @@
 					display: -webkit-box;
 					-webkit-box-orient: vertical;
 					overflow: hidden;
+					height: 54px;
 				}
 			}
 			&-note{
