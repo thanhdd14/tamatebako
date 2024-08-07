@@ -537,7 +537,7 @@
 		}
 	}
 	&:hover{
-		opacity: 1;
+		opacity: 1 !important;
 		.made-block__img{
 			&:after{
 				opacity: 1;
@@ -597,7 +597,7 @@
 		}
 	}
 	&__box{
-		color: $dark;
+		color: $dark !important;
 		@include font-size(14);
 		@include mq(){
 			@include flex(0,0,wrap);
@@ -630,6 +630,7 @@
 		p{
 			overflow: hidden;
 			max-height: 38px;
+			line-height: 1.4;
 			@include mq(){
 				max-height: 60px;
 				-webkit-line-clamp: 3;

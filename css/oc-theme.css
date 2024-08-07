@@ -3317,7 +3317,7 @@ textarea.form-control {
   }
 }
 .made-block:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .made-block:hover .made-block__img:after {
   opacity: 1;
@@ -3391,7 +3391,7 @@ textarea.form-control {
   }
 }
 .news-list__box {
-  color: #363636;
+  color: #363636 !important;
   font-size: 1.4rem;
 }
 @media screen and (max-width: 834px) {
@@ -3435,6 +3435,7 @@ textarea.form-control {
 .news-list__ct p {
   overflow: hidden;
   max-height: 38px;
+  line-height: 1.4;
 }
 @media screen and (max-width: 834px) {
   .news-list__ct p {
@@ -3663,6 +3664,7 @@ textarea.form-control {
   display: block;
   line-height: 1.38;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 .about-block__ct-ttl span {
   display: block;
@@ -3768,6 +3770,7 @@ textarea.form-control {
   display: block;
   line-height: 1.4;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 @media screen and (max-width: 834px) {
   .about-staff__ct-ttl {
@@ -3776,7 +3779,6 @@ textarea.form-control {
 }
 .about-staff__ct-ttl .c-ft--en {
   font-size: 1.6rem;
-  margin-bottom: 10px;
   color: #8C8C8C;
 }
 @media screen and (max-width: 834px) {
@@ -3787,6 +3789,7 @@ textarea.form-control {
 .about-staff__ct-ttl .about-staff__ct-ttl--name {
   font-size: 4.8rem;
   font-weight: 500;
+  color: #363636;
 }
 @media screen and (max-width: 834px) {
   .about-staff__ct-ttl .about-staff__ct-ttl--name {

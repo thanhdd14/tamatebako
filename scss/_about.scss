@@ -110,6 +110,7 @@
 			display: block;
 			line-height: 1.38;
 			margin-bottom: 15px;
+			text-decoration: none;
 			span{
 				display: block;
 			}
@@ -208,13 +209,13 @@
 			display: block;
 			line-height: 1.4;
 			margin-bottom: 20px;
+			text-decoration: none;
 			@include mq(){
 				text-align: center;
 			}
 			.c-ft{
 				&--en{
 					@include font-size(16);
-					margin-bottom: 10px;
 					color: #8C8C8C;
 					@include mq(){
 						@include font-size(14);
@@ -224,6 +225,7 @@
 			.about-staff__ct-ttl--name{
 				@include font-size(48);
 				font-weight: 500;
+				color: #363636;
 				@include mq(){
 					@include font-size(30);
 				}
