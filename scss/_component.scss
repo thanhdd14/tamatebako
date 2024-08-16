@@ -90,12 +90,14 @@ Component
 	&__01{
 		display: block;
 		font-size: clamp(48px,8.8vw,128px);
-		font-weight: bold;
+		font-weight: 600;
 		font-family: $font-en;
 		line-height: 1.2;
 		color: #E4E4E4;
 		letter-spacing: -1px;
 		margin-bottom: 11px;
+		padding-left: 0;
+		padding-right: 0;
 		@include mq(){
 			line-height: 1;
 			margin-bottom: 20px;
@@ -122,20 +124,39 @@ Component
 		line-height: 1.4;
 		font-weight: 500;
 		color: $dark !important;
+		padding-right: 40px;
+		text-decoration: underline;
 		&:after{
+			display: none;
 			content: "";
+			border: solid #363636;
+			border-width: 0 1px 1px 0;
+			padding: 3px;
 			position: absolute;
-			bottom: 0;
+			left: 10px;
+			top: 13px;
+			transform: rotate(-45deg);
+		}
+		&:before{
+			display: none;
+			content: "";
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: 1px solid #363636;
+			position: absolute;
 			left: 0;
-			right: 0;
-			height: 1px;
-			background: $dark;
-			@include smooth-transition;
+			@include v-align;
 		}
 		&:hover{
 			opacity: 1;
+			padding-right: 0;
+			padding-left: 40px;
+			&:before{
+				display: block;
+			}
 			&:after{
-				right: -20px;
+				display: inline-block;
 			}
 		}
 	}
@@ -215,6 +236,29 @@ Component
 		transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	}
 }
-
+.js-scrollin--left {
+	opacity: 0;
+	-webkit-transform: translate(-50px, 0);
+	-ms-transform: translate(-50px, 0);
+	transform: translate(-50px, 0);
+	transition: all 0.5s linear;
+	&.active{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+.js-scrollin--right {
+	opacity: 0;
+	-webkit-transform: translate(50px, 0);
+	-ms-transform: translate(50px, 0);
+	transform: translate(50px, 0);
+	transition: all 0.5s linear;
+	&.active{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+}
 
 

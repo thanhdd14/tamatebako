@@ -20,6 +20,10 @@
 			color: $dark;
 			line-height: 0.9;
 			margin-bottom: 53px;
+			transition: all 0.7s ease-out;
+			opacity: 0;
+			visibility: hidden;
+			transform: translate(-70px, 0);
 			@include mq(){
 				margin-bottom: 20px;
 			}
@@ -39,6 +43,12 @@
 				margin-bottom: 0;
 			}
 		}
+		.ion-link{
+			&:after{
+				width: 15px;
+				height: 16px;
+			}
+		}
 	}
 	&__img{
 		width: 45.5%;
@@ -56,5 +66,12 @@
 		img{
 			width: 100%;
 		}
+	}
+}
+.is-hello{
+	.rental-items__ct .c-ttl__01{
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, 0);
 	}
 }

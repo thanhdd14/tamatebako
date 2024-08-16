@@ -96,6 +96,28 @@
 			.flow-steps__block{
 				border-bottom: none;
 			}
+			&:before{
+				display: none;
+			}
+		}
+		&:before{
+			content: "";
+			width: 1px;
+			height: 0;
+			position: absolute;
+			top: 60px;
+			left: 32px;
+			transition: all 0.5s ease;
+			background: $dark;
+			@include mq(){
+				display: none;
+			}
+		}
+		&.active{
+			&:before{
+				height: 100%;
+			}
+
 		}
 	}
 	&__number{
@@ -219,9 +241,10 @@
 		&:hover{
 			background: #D8D8D8;
 			.items-block__ttl{
-				&:after{
-					width: 100%;
-				}
+				text-decoration: underline;
+				//&:after{
+				//	width: 100%;
+				//}
 			}
 		}
 	}

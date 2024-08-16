@@ -11,12 +11,17 @@
 		display: block;
 		color: $dark;
 		margin-bottom: 50px;
+		transition: all 0.7s ease-out;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate(-70px, 0);
 		@include mq(){
 			margin-bottom: 25px;
 		}
 	}
 	&__banner{
 		position: relative;
+		overflow: hidden;
 		&:before{
 			content: "";
 			position: absolute;
@@ -25,9 +30,12 @@
 			right: 0;
 			bottom: 0;
 			background: rgba(black,0.2);
+			z-index: 1;
 		}
 		img{
 			width: 100%;
+			transition: all 1s linear;
+			transform: scale(1.2,1.2);
 		}
 		&-ttl{
 			display: block;
@@ -60,7 +68,18 @@
 		}
 	}
 }
-
+.is-hello{
+	.mv-page__ttl{
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, 0);
+	}
+	.mv-page__banner{
+		img{
+			transform: scale(1.0,1.0);
+		}
+	}
+}
 .sec-about-content{
 	padding: 90px 0 100px;
 	@include mq(){

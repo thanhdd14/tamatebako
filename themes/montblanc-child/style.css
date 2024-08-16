@@ -1,0 +1,13 @@
+/*
+ Theme Name:   Montblanc Child
+ Theme URI: http://wooseum.com
+ Author: wooseum.com
+ Author URI: http://wooseum.com
+ Template: montblanc
+ Version: 1.0.0
+ */
+
+
+.product .summary span.in-stock {
+    display: none;
+}

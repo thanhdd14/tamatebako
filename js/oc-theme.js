@@ -146,3 +146,52 @@ $(function () {
         $(this).addClass('active')
     });
 });
+
+$(window).on('scroll load assessFeatureHeaders', function(){
+    var scrollTop = $(window).scrollTop();
+    var appearenceBuffer = 60;
+    var windowBottom = scrollTop + $(window).height() - appearenceBuffer;
+    $('body').toggleClass('scrolled-down', scrollTop > 0);
+    $('.js-scrollin:not(.active)').filter(function(){
+        var offset = $(this).offset().top;
+        var height = $(this).outerHeight();
+        return offset + height >= scrollTop && offset <= windowBottom;
+    }).addClass('active');
+});
+$(window).on('scroll load assessFeatureHeaders', function(){
+    var scrollTop = $(window).scrollTop();
+    var appearenceBuffer = 60;
+    var windowBottom = scrollTop + $(window).height() - appearenceBuffer;
+    $('body').toggleClass('scrolled-down', scrollTop > 0);
+    $('.js-scrollin--left:not(.active)').filter(function(){
+        var offset = $(this).offset().top;
+        var height = $(this).outerHeight();
+        return offset + height >= scrollTop && offset <= windowBottom;
+    }).addClass('active');
+});
+$(window).on('scroll load assessFeatureHeaders', function(){
+    var scrollTop = $(window).scrollTop();
+    var appearenceBuffer = 60;
+    var windowBottom = scrollTop + $(window).height() - appearenceBuffer;
+    $('body').toggleClass('scrolled-down', scrollTop > 0);
+    $('.js-scrollin--right:not(.active)').filter(function(){
+        var offset = $(this).offset().top;
+        var height = $(this).outerHeight();
+        return offset + height >= scrollTop && offset <= windowBottom;
+    }).addClass('active');
+});
+$(window).on('scroll load assessFeatureHeaders', function(){
+    var scrollTop = $(window).scrollTop();
+    var appearenceBuffer = 60;
+    var windowBottom = scrollTop + $(window).height() - appearenceBuffer;
+    $('body').toggleClass('scrolled-down', scrollTop > 0);
+    $('.js-scrollin--item:not(.active)').filter(function(){
+        var offset = $(this).offset().top;
+        var height = $(this).outerHeight();
+        return offset + height >= scrollTop && offset <= windowBottom;
+    }).addClass('active');
+});
+function load() {
+    document.body.classList.add('is-hello');
+}
+window.onload = load;
