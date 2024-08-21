@@ -77,7 +77,8 @@ sub {
     vertical-align: text-bottom;
 }
 
-input, textarea, select, button {
+
+#header input, #header textarea, #header select, #header button {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -88,7 +89,7 @@ input, textarea, select, button {
 }
 
 /*to enable resizing for IE*/
-input, textarea, select {
+#header input, #header textarea, #header select {
     *font-size: 100%;
 }
 
@@ -1335,6 +1336,7 @@ Component
   color: #363636 !important;
   padding-right: 40px;
   text-decoration: underline;
+      font-family: "Outfit", sans-serif;
 }
 .c-btn__01:after {
   display: none;
@@ -1404,7 +1406,7 @@ Component
 }
 @media screen and (max-width: 834px) {
     .sec-flow .c-ttl__01,.sec-items .c-ttl__01{
-    margin-left: -2px;
+    margin-left: 0;
 }
 }
 
@@ -1425,7 +1427,7 @@ Component
 .view-more {
     display: inline-block;
     color: #363636 !important;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.4rem;
     text-decoration: underline;
 }
@@ -2108,7 +2110,7 @@ textarea.form-control {
     visibility: hidden;
 }
 #header .header-nav__items-box--img:hover {
-    opacity: 1;
+    opacity: 1 !important;
 }
 #header .header-nav__items-box--img:hover .img-01 {
     opacity: 0;
@@ -2854,11 +2856,19 @@ textarea.form-control {
     transition: all 5s ease;
 }
 .mv-slider__item img {
-    width: 100%;
-    height: calc(100vh - 100px);
-    -o-object-fit: cover;
-    object-fit: cover;
-    font-family: "object-fit: cover";
+  width: 100%;
+  height: calc(100vh - 100px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-family: "object-fit: cover";
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.mv-slider__item:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .mv-ttl {
@@ -4118,7 +4128,7 @@ textarea.form-control {
 }
 @media screen and (max-width: 834px) {
     .rental-items__ct p {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 }
 .rental-items__ct p:last-child {
@@ -4297,7 +4307,7 @@ textarea.form-control {
 }
 .flow-steps__number {
     position: absolute;
-    top: 51px;
+    top: 54px;
     left: 0;
     display: inline-block;
     color: white;
@@ -4329,7 +4339,7 @@ textarea.form-control {
 @media screen and (max-width: 834px) {
     .flow-steps__block {
         min-height: 100px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
 .flow-steps__block-ct {

@@ -143,7 +143,10 @@ $(function () {
         $(".flow-block .flow-block__item").removeClass('active');
         $(".flow-block .flow-block__item").eq(num).addClass('active');
         $(".flow-tab li").removeClass('active');
-        $(this).addClass('active')
+        $(this).addClass('active');
+        $(".flow-steps .flow-steps__item:nth-child(1)").addClass("active");
+        $(".flow-steps .flow-steps__item:nth-child(2)").addClass("active");
+        $(".flow-steps .flow-steps__item:nth-child(3)").addClass("active");
     });
 });
 

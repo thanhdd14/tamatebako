@@ -36,7 +36,7 @@ $template_uri = get_template_directory_uri();
 <div id="page" class="hfeed site">
 
     <header id="header">
-        <a href="./" class="header-logo">
+        <a href="/" class="header-logo">
             <img src="<?php echo $template_uri; ?>/img/common/logo.png" alt="Tamatebako" class="logo-01">
             <img src="<?php echo $template_uri; ?>/img/common/logo-white.png" alt="Tamatebako" class="logo-02">
         </a>
