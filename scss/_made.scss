@@ -122,7 +122,7 @@
 	}
 	&__number{
 		position: absolute;
-		top: 46px;
+		top: 41px;
 		left: 0;
 		display: inline-block;
 		color: white;
@@ -137,11 +137,12 @@
 		}
 	}
 	&__block{
-		@include flex(0,center,wrap);
+
 		border-bottom: 1px dotted #D8D8D8;
 		padding: 30px 0;
 		min-height: 175px;
 		@include mq(){
+			@include flex(0,center,wrap);
 			min-height: 100px;
 			margin-bottom: 30px;
 		}
@@ -189,7 +190,12 @@
 		}
 		&-img{
 			width: 100px;
+			position: absolute;
+			right: 0;
+			@include v-align;
 			@include mq(){
+				position: static;
+				transform: translateY(0);
 				display: block;
 				width: 75px;
 				margin: 0 auto;

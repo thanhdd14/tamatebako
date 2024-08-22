@@ -375,19 +375,21 @@
 					@include mq(tb-min){
 						&:after {
 							position: absolute;
-							@include smooth-transition;
-							content: '';
+							-webkit-backface-visibility: hidden;
+							-webkit-transition: all 0.3s ease;
+							-o-transition: all 0.3s ease;
+							transition: all 0.3s ease;
+							content: "";
+							right: 0;
 							width: 0;
-							left: 50%;
 							bottom: 0;
 							height: 1px;
-							background:$dark;
+							background: #363636;
 						}
 						&:hover, &.active {
 							opacity: 1;
 							&:after {
 								width: 100%;
-								left: 0;
 							}
 						}
 					}
