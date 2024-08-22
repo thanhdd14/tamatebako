@@ -16,22 +16,32 @@ get_header(); ?>
     <section class="sec-mv">
         <ul class="mv-slider js-mv-slider">
             <li class="mv-slider__item">
-                <img src="<?php echo $template_uri;?>/img/index/mv-img-01.jpg" alt="OUKA" class="pc">
-                <img src="<?php echo $template_uri;?>/img/index/mv-img-01-sp.jpg" alt="OUKA" class="sp">
+                <a href="">
+                    <img src="<?php echo $template_uri;?>/img/index/mv-img-01.jpg" alt="OUKA" class="pc">
+                    <img src="<?php echo $template_uri;?>/img/index/mv-img-01-sp.jpg" alt="OUKA" class="sp">
+                </a>
             </li>
             <li class="mv-slider__item">
-               <img src="<?php echo $template_uri;?>img/index/mission-img.jpg" alt="OUKA" >
+              <a href="">
+                   <img src="<?php echo $template_uri;?>img/index/mission-img.jpg" alt="OUKA" >
+              </a>
             </li>
             <li class="mv-slider__item">
-                <img src="<?php echo $template_uri;?>/img/index/mv-img-01.jpg" alt="OUKA" class="pc">
-                <img src="<?php echo $template_uri;?>/img/index/mv-img-01-sp.jpg" alt="OUKA" class="sp">
+               <a href="">
+                    <img src="<?php echo $template_uri;?>/img/index/mv-img-01.jpg" alt="OUKA" class="pc">
+                    <img src="<?php echo $template_uri;?>/img/index/mv-img-01-sp.jpg" alt="OUKA" class="sp">
+                </a>
             </li>
             <li class="mv-slider__item">
-                <img src="<?php echo $template_uri;?>img/index/mission-img.jpg" alt="OUKA" >
+               <a href="">
+                   <img src="<?php echo $template_uri;?>img/index/mission-img.jpg" alt="OUKA" >
+              </a>
             </li>
             <li class="mv-slider__item">
-                <img src="<?php echo $template_uri;?>/img/index/mv-img-01.jpg" alt="OUKA" class="pc">
-                <img src="<?php echo $template_uri;?>/img/index/mv-img-01-sp.jpg" alt="OUKA" class="sp">
+                <a href="">
+                    <img src="<?php echo $template_uri;?>/img/index/mv-img-01.jpg" alt="OUKA" class="pc">
+                    <img src="<?php echo $template_uri;?>/img/index/mv-img-01-sp.jpg" alt="OUKA" class="sp">
+                </a>
             </li>
         </ul>
         <h1 class="mv-ttl">
